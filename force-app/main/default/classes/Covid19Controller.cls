@@ -11,7 +11,7 @@ public class Covid19Controller {
         response = http.send(request);
         
         Covid19Parser prser = Covid19Parser.parse(response.getBody().replace('"Global":','"AllStats":')); 
-        System.debug('dasda');
+        System.debug('dasda'); 
         return prser;
             
     }
